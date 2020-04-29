@@ -1,78 +1,126 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Muzyka</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+      }
 
-        body {
-            font-family: arial;
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #666;
-        }
+      body {
+        font-family: arial;
+        text-align: center;
+        background-color: #666;
+      }
 
-        img {
-            width: 100%;
-            padding: 50px;
-        }
+      header {
+        background-image: url("music1.jpg");
+        height: 50vh;
+        width: 70vw;
+      }
 
-        p {
-            padding: 20px;
-        }
+      header h1 {
+        color: white;
+        line-height: 50vh;
+        font-size: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+      }
+      nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 30vw;
+        height: 100vh;
+        background-color: black;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      nav a {
+        display: block;
+        padding: 10px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 15px;
+        color: white;
+      }
+
+      section {
+        width: 70vw;
+      }
+
+      img {
+        width: 80%;
+        padding: 50px;
+      }
+
+      p {
+        padding: 20px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <h1>Najpopolarniejsza muzyka</h1>
-    <div>
-        <p>Najpopularniejszy gatunek muzyki rozrywkowej Hip Hop
-            Hip-hop, także hip hop lub rap – gatunek muzyki rozrywkowej powstały w latach 70. XX wieku w Stanach
-            Zjednoczonych.
-        </p>
-        <div><img src="music1.jpg" alt="muzyka"></div>
-    </div>
-    <div class="rank">
-        <h2>Rankingi</h2>
-        <div><img src="music2.png" alt=""></div>
-        <div><img src="music3.png" alt=""></div>
-    </div>
-    <div class="musicGenres">
+  <body>
+    <header>
+      <h1>Najpopolarniejsza muzyka</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#rank">Rankingi</a></li>
+        <li><a href="#gatunki">Najpopularniejsze gatunki</a></li>
+        <li><a href="#wykonawcy">Wykonawcy</a></li>
+        <li><a href="#pop">Muzyka pop</a></li>
+        <li><a href="#disco">Disco polo</a></li>
+        <li><a href="#twórcy">Najlepsi twórcy</a></li>
+      </ul>
+    </nav>
+    <section>
+      <div></div>
+      <div class="rank">
+        <h2 id="rank">Rankingi</h2>
+        <div><img src="music2.png" alt="" /></div>
+        <div><img src="music3.png" alt="" /></div>
+      </div>
+      <div id="gatunki" class="musicGenres">
         <h2>Najpopolarniejsze gatunki muzyczne wśród nastolatków</h2>
-        <div><img src="music4.png" alt=""></div>
-    </div>
-    <div class="contractors">
+        <div><img src="music4.png" alt="" /></div>
+      </div>
+      <div id="wykonawcy" class="contractors">
         <h2>Wykonawcy</h2>
-        <p>Uczestników badań poprosiliśmy o wskazanie ulubionych wykonawców muzyki (dla gatunku słuchanego najczęściej).
-            Zestawienie otwierają Paluch i Rihanna. Listę dziesięciu artystów wymienionych przez największą liczbę osób
-            prezentuję poniżej.
+        <p>
+          Uczestników badań poprosiliśmy o wskazanie ulubionych wykonawców
+          muzyki (dla gatunku słuchanego najczęściej). Zestawienie otwierają
+          Paluch i Rihanna. Listę dziesięciu artystów wymienionych przez
+          największą liczbę osób prezentuję poniżej.
         </p>
-        <div><img src="music5.png" alt=""></div>
-    </div>
-    <div class="pop">
+        <div><img src="music5.png" alt="" /></div>
+      </div>
+      <div id="pop" class="pop">
         <h2>Muzyka pop</h2>
-        <p>Muzyka pop – ogólnie muzyka popularna, termin ten jest jednak wieloznaczny, w najszerszym sensie oznacza
-            każdy rodzaj muzyki rozrywkowej, niezależnie od jej charakteru.
+        <p>
+          Muzyka pop – ogólnie muzyka popularna, termin ten jest jednak
+          wieloznaczny, w najszerszym sensie oznacza każdy rodzaj muzyki
+          rozrywkowej, niezależnie od jej charakteru.
         </p>
-    </div>
-    <div class="discopolo">
+      </div>
+      <div id="disco" class="discopolo">
         <h2>Disco polo</h2>
-        <p>2 Najpopularniejszym gatunkiem jest disco polo
+        <p>2 Najpopularniejszym gatunkiem jest disco polo</p>
+        <p>
+          Disco polo – gatunek muzyki popularnej będący nurtem muzyki tanecznej,
+          powstałym w Polsce w latach 80. XX wieku.
         </p>
-        <p>Disco polo – gatunek muzyki popularnej będący nurtem muzyki tanecznej, powstałym w Polsce w latach 80. XX
-            wieku.</p>
-    </div>
-    <div class="creators">
+      </div>
+      <div id="tworcy" class="creators">
         <h2>Najlepsi twórcy</h2>
-        <div><img src="music6.png" alt=""></div>
-    </div>
-</body>
-
+        <div><img src="music6.png" alt="" /></div>
+      </div>
+    </section>
+  </body>
 </html>
